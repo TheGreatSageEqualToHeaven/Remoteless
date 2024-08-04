@@ -1,6 +1,6 @@
 # Remoteless
 
-An evil networking library created purely out of spite. Have you ever wanted networking what will eat your dragons? Expose unpredictable and undefined behaviour? Is Hyrum's law incarnate? You're in the right place.  
+An evil networking library created purely out of spite. Have you ever wanted networking that will eat your dragons? Expose unpredictable and undefined behaviour? Is Hyrum's law incarnate? You're in the right place.  
 
 Remoteless is a networking library for the Roblox engine that does not rely on `RemoteEvent`, `RemoteFunction` or `UnreliableRemoteEvent` but instead chooses alternative blasphemous methods for achieving client to server and server to client communication.
 
