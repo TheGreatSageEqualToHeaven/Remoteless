@@ -61,14 +61,16 @@ end
 ```luau
 local Remoteless = require(game:GetService("ReplicatedStorage"):WaitForChild("Remoteless"))
 
+local Alive = true
 local Humanoid = script.Parent:WaitForChild("Humanoid")
 
 Humanoid.Died:Once(function()
+	Alive = false
 	Remoteless.Cancel()
 end)
 
 task.defer(function()
-	while true do 
+	while Alive do 
 		local Buf = Remoteless.WaitForEvent()
 
 		task.spawn(function()
