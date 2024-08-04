@@ -13,7 +13,7 @@ Long answer: This has only a singular asinine use and is magnitudes slower than 
 
 # API Examples
 
-Remoteless uses a polling API for communicating, the polling function is `WaitForEvent` which only passes around your single buffer meaning multiple events must be handled by embedding event data directly in your buffer.
+Remoteless uses a polling API for communicating, the polling function is `WaitForEvent` which only passes around your single buffer meaning multiple events must be handled by embedding event data directly in your buffer. Remoteless handles some clean-up but polling threads need to be cleaned up by the developer.
 
 **Server:**
 
